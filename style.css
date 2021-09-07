@@ -39,27 +39,30 @@ main {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
   max-width: 30%;
 }
 
 .container img {
   width: 64px;
   height: auto;
-  margin: 2rem 3rem;
+  margin: 2rem 0;
 }
 
 h1 {
   text-transform: uppercase;
   font-family: "Big Shoulders Display";
   color: var(--light-gray);
-  margin: 1rem 3rem;
+  margin: 1rem 0;
 }
 
 p {
   color: var(--p-colors);
   font-size: 14px;
   opacity: 0.9;
-  margin: 1rem 3rem 3rem;
+  margin: 1rem 0 3rem;
+  max-width: 90%;
   line-height: 1.5rem;
 }
 
@@ -80,13 +83,14 @@ p {
 }
 
 .btn {
-  width: 40%;
   padding: 0.75rem 1rem;
   border: 2px solid var(--light-gray);
   border-radius: 2rem;
-  margin: 2rem 3rem;
+  margin: 2rem 0;
   font-weight: bold;
   cursor: pointer;
+  align-self: flex-start;
+  justify-self: flex-end;
 }
 .btn:hover {
   background-color: transparent;
@@ -107,7 +111,7 @@ p {
 @media (max-width: 775px) {
   main {
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
   }
   .container {
     max-width: 100%;
